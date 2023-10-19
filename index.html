@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dela+Gothic+One&family=Didact+Gothic&family=Nanum+Gothic+Coding&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Sally Glanowski Développeuse</title>
+</head>
+<body>
+
+    <header>
+        <div class="top">
+            <h1>/Sally Glanowski</h1>
+            <nav>
+                <ul>
+                    <li>Présentation</li>
+                    <li>Travaux</li>
+                    <li>Compétences</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="presentation">
+                <p id="small-text">Bonjour, je suis</p>
+                <h2>Developpeuse Front-end</h2> 
+                <p id="lines">Pour la création 
+                    de vos sites vitrine ainsi que de vos <br>applications e-commerce.
+                </p>
+                <a href="tel:0688728130" id="contactButton" class="bouton">Contactez-moi !</a>
+
+                <p id="phone"></p>         
+            </div>
+            <img class="logoFemmePc" src="./images/logo/femmePc.png" alt="Your Image">
+        </div>
+    </header>
+
+    <section class="a-propos">
+        <div class="qui-suis-je">
+            <p> QUI SUIS-JE ?</p>
+            <h3>À propos</h3>
+        </div>
+        <div class="portrait">
+            <div class="computer">
+                <img id="ordinateur" src="./images/design/computer.png">
+            </div>
+            <div class="bio">Après plusieurs années dans le domaine du médico-social,
+                j'ai décidé de renouer avec ma créativité en apprenant à jongler
+                avec des balises HTML, à créer des mises en page personnalisées 
+                avec du CSS, et à donner vie à des sites web avec du JavaScript.<br><br>
+                Le Front-End, c'est comme être un artiste numérique, mélangeant 
+                couleurs, typographies et animations pour créer des expériences 
+                utilisateur uniques.<br><br>
+                C'est là que réside toute la magie du web, un endroit où chaque 
+                clic est une récompense pour votre créativité.<br><br>
+                Formée en 2023 par OpenClassrooms, j'ai acquis une grande 
+                autonomie de travail et je suis continuellement à l'affût de 
+                nouveaux outils afin de répondre le plus précisément possible 
+                aux demandes.<br>
+                Alors, n'hésitez pas à visiter mes sites et à me contacter pour conquérir le monde du Front-End avec style !
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="travaux">
+            <div class="mes-travaux">
+                <p> PORTFOLIO</p>
+                <h4>Mes travaux</h4>
+            </div>
+            <div class="background-travaux">
+                
+                <div class="image-grid" itemprop="hasPart">
+                    <article class="image-item" itemprop="hasPart">
+                        <a href="https://sally-glanowski.github.io/Booki/" target="_blank">
+                            <img src="./images/booki/booki3.png" alt="Image lien logo booki">
+                            <h5 class="p-travaux" itemprop="name">BOOKI<br><span>Agence de voyage</span></h5>
+                        </a>
+                    </article>
+        
+                    <article class="image-item" itemprop="hasPart">
+                        <a href="./images/sophie/sosopdf.png" target="_blank" alt="site Sophie Bluel" class="modal-link">
+                            <img src="./images/sophie/accueil-sophie.png" alt="lien site de Sophie Bluel">
+                            <h5 class="p-travaux" itemprop="name">SOPHIE BLUEL<br><span>Architecte</span></h5>
+                        </a>
+                    </article>
+                    
+        
+                    <article class="image-item" itemprop="hasPart">
+                        <a href="./images/grimoire/grimoirepdf.png" target="_blank" alt="site librairie mon vieux grimoire" class="modal-link">
+                            <img src="./images/grimoire/accueil2.png" alt="Image logo booki">
+                            <h5 class="p-travaux" itemprop="name">MON VIEUX GRIMOIRE<br><span>Librairie</span></h5>
+                        </a>
+                    </article>
+        
+                    <article class="image-item" itemprop="hasPart">
+                        <a href="https://sally-glanowski.github.io/nina-carducci.sally-glanowski.github.io/" target="_blank" alt="site photographe nina carducci">
+                            <img src="./images/nina/accueil2.png" alt="Image nina carducci en salopette">
+                            <h5 class="p-travaux" itemprop="name">NINA CARDUCCI<br><span>Photographe</span></h5>
+                        </a>
+                    </article>
+        
+                </div>
+            </div>
+        </section>
+            <!--------COMPETENCES-->
+        
+        <section class="competences" itemscope itemtype="http://schema.org/Skill">
+            <div class="mes-competences">
+                <p> SERVICES</p>
+                <h6>Mes compétences</h6>
+            </div>
+            
+<div class="container-competences" itemprop="hasPart">
+  
+    <div class="card" itemprop="hasPart">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="./images/competences/front3.png" alt="Image1=compétences frontend" style="width:100%;height:auto;">
+            <div class="titre-card">Front-End</div>
+          </div>
+          <div class="card-back">
+            <ul class="liste-competences">
+                <li>HTML / CSS</li>
+                <li>SASS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>SEO</li>
+                <li>Responsive design</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+    <div class="card" itemprop="hasPart">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/competences/back2.png" alt="Image2= compétences backend" style="width:100%;height:auto;">
+            <div class="titre-card">Back-End</div>
+          </div>
+          <div class="card-back">
+            <ul class="liste-competences">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React</li>
+                <li>Création et utilisation API</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+    <div class="card" itemprop="hasPart">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/competences/outils4.png" alt="Image3= outils de travail" style="width:100%;height:auto;">
+            <div class="titre-card">Outils</div>
+          </div>
+          <div class="card-back">
+            <ul class="liste-competences">
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>Git / Github</li>
+                <li>Kanban</li>
+                <li>Lighthouse</li>
+                <li>Wave</li>
+                <li>Schema.org</li>
+                <li>Mdn</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+    <div class="card" itemprop="hasPart">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/competences/a-venir3.png" alt="Image4 :compétences à venir" style="width:100%;height:auto;">
+            <div class="titre-card">A venir</div>
+          </div>
+          <div class="card-back">
+            <ul class="liste-competences">
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>Wordpress</li>
+                <li>Woocommerce</li>
+                <li>Shopify</li>
+                <li>Prestashop</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+    </main>
+
+            <aside class="formulaire">
+                <div class="mon-formulaire">
+                    <p> POUR TOUT RENSEIGNEMENT</p>
+                    <h6>Contactez-moi !</h6>
+                </div>
+                
+                <form>
+                    <input type="text" id="nom" name="nom" placeholder="Nom">
+                    <input type="email" id="mail" name="mail" placeholder="Email">
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                    <input type="text" id="telephone" name="telephone" placeholder="Téléphone">
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <button id="envoyer" type="submit">Envoyer</button>
+                </form>
+            </aside>
+        <aside id="coordonnees">
+            <div class="tel-mail">
+                    <div id=tel>
+                        <p>/ TEL</p>
+                        <a href="tel:0688728130" itemprop="telephone">06 88 72 81 30</a>
+                    </div>
+                     <div id="mail">
+                        <p>/ MAIL</p>
+                        <a href="mailto:sally.glanowski@gmail.com">sally.glanowski@gmail.com</a>
+                    </div>
+                </div>    
+            <div class="reseaux">
+                <div class="icones">
+                    <a href="https://www.linkedin.com/in/sally-glanowski-827799261/">
+                        <img src="./images/footer/linkedin.png" alt="icone linkedin" itemprop="sameAs">
+                    </a>
+                    </div>
+                <div class="icones">
+                    <a href="https://github.com/Sally-Glanowski">
+                        <img src="./images/footer/github.png" alt="icône github" itemprop="sameAs">
+                    </a>
+                </div>
+                <div class="icones"><img src="./images/footer/instagram.png" alt="icône instagram" itemprop="sameAs">
+                </div>
+            </div>
+        </aside>
+
+        <footer id="footer">
+            <div id="noms">
+                / Sally Glanowski
+            </div>
+            <div class="footer-info">
+                <p>DEVELOPPEUSE FRONT- END</p>
+                <span>Mentions légales - Copyright 2023</span>
+            </div>
+        </footer>
+        
+    
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
