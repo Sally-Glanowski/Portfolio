@@ -7,6 +7,7 @@ header {
     flex-direction: column;
     background-color: #e37131;
 background-image: linear-gradient(135deg, #e37131 0%, #f9f400 100%);
+
 }
 
 
@@ -591,8 +592,61 @@ font-weight: 500;
 }
 
 @media (max-width: 870px){
-   
+   /*****NAVIGATION**********/
+
+   header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .top{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+   }
+    h1{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    }
+
+   .bottom{
+    display:flex;
+    padding:0px;
+    justify-content: center;
+    padding-bottom: 40px;
+   }
+
+   #contactButton{
+    display: flex;
+    margin: 0 auto;
+   }
+
+   nav ul{
+    margin-left: 0px;
+    padding-left: 0;
+   }
+
+   .presentation{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+   }
+
+   h2 {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+   }
+
+   #lines{
+    width: 100%;
+   }
         .portrait {
+          display:flex;
             align-items: center;
             flex-direction: column;
         }
@@ -615,6 +669,50 @@ font-weight: 500;
                 padding-left: 8%;
                 margin-top: 40px;
         }
+
+        form {
+          display: flex;
+          flex-direction: column; /* Pour afficher les éléments en colonnes */
+          align-items: center; /* Pour centrer horizontalement */
+          width: 100%;
+          gap: 10px; /* Espacement entre les éléments */
+      }
+      
+      /* Retirez la propriété grid-column pour l'élément #envoyer */
+      #envoyer {
+          padding: 10px;
+          background-color: #10837D;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          width: 50%;
+          cursor: pointer;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          width: 80%; /* Les cases seront aussi larges que leur conteneur */
+          max-width: 400px; /* Vous pouvez ajuster la largeur maximale */
+          margin: 0 auto; /* Pour les centrer horizontalement s'ils ne sont pas déjà centrés */
+      }
+      
+      textarea {
+          /* Vous pouvez supprimer cette ligne, elle n'est plus nécessaire */
+          height: 150px;
+          width: 80%; /* Remarquez que j'ai ajusté la largeur de la zone de texte à 100% */
+      }
+
+      #footer{
+        display:flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        height: 150px;
+      }
+      
         
     
     

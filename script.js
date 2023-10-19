@@ -2,9 +2,7 @@
 document.getElementById('contactButton').addEventListener('click', function() {
     if (this.textContent === 'Contactez-moi !') {
         this.textContent = '06 88 72 81 30';
-    } else {
-        this.textContent = 'Contactez-moi !';
-    }
+    } 
 });
 
 
