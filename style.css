@@ -1,6 +1,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto; /* Centre la page horizontalement */
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -599,11 +600,13 @@ font-weight: 500;
     flex-direction: column;
     align-items: center;
    }
+
    .top{
     display: flex;
     flex-wrap: wrap;
     padding-left: 0px;
    }
+
     h1{
     margin: 0 auto;
     padding-top: 50px;
@@ -623,8 +626,18 @@ font-weight: 500;
    }
 
    nav ul{
-    margin-left: 0px;
-    padding-left: 0;
+    
+    
+    background-color: rgb(232, 232, 26);
+    width: 77.2%
+    
+   }
+
+   .top li{
+    color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10;
    }
 
    .presentation{
@@ -644,6 +657,8 @@ font-weight: 500;
 
    #lines{
     width: 100%;
+    margin-bottom: 50px;
+    font-size: 17px;
    }
         .portrait {
           display:flex;
@@ -706,11 +721,75 @@ font-weight: 500;
           width: 80%; /* Remarquez que j'ai ajusté la largeur de la zone de texte à 100% */
       }
 
+      #coordonnees{
+        display:flex;
+        flex-direction: column;
+        
+      }
+
+      .tel-mail{
+        widows: 100%;
+        padding-left: 0;
+        text-align: center;
+      }
+
+      #tel{
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      #tel  p{
+        font-family: arial;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+    
+      .tel-mail a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Garamond';
+        font-size:20px
+      }
+    
+      #mail p{
+        font-family: Arial;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        
+      }
+
+      .reseaux{
+        display:flex;
+        flex-direction: row;
+        gap:40px;
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+
       #footer{
         display:flex;
-        justify-content: left;
+        justify-content: center;
+        align-items: center; 
         flex-wrap: wrap;
-        height: 150px;
+        height: 120px;
+        padding-left: 0;
+      }
+
+      #footer p{
+        font-size: 16px;
+      }
+
+      #footer span{
+        font-size: 14px;
+        margin-left: 5px;
+        text-align: center;
+      }
+
+      #noms{
+        font-size: 27px;
+        padding-top: 10px;
       }
       
         
