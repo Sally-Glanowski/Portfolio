@@ -55,6 +55,17 @@ nav ul li{
     font-family: arial;
     color: white;
     font-weight: 600;
+    
+}
+
+nav a{
+  text-decoration: none;
+  color:white;
+}
+
+nav a:focus {
+  color: #10837D; /* Change la couleur du texte au clic */
+  outline: none; /* Supprime la bordure de mise au point par défaut (optionnel) */
 }
 
 .logoFemmePc{
@@ -457,7 +468,7 @@ font-weight: 500;
   }
   
   #envoyer:active {
-    transform: scale(0.9); /* réduit la taille du bouton de 10% lorsqu'il est cliqué */
+    transform: scale(0.9); /* réduit la taille du bouton de 10%  */
 }
 
 
@@ -510,7 +521,7 @@ font-weight: 500;
   }
 
   .reseaux .icones img {
-    width: 40px; /* Ajustez la taille selon vos besoins */
+    width: 40px; 
     height: auto; 
   }
   
@@ -594,24 +605,10 @@ font-weight: 500;
 
 @media (max-width: 870px){
    /*****NAVIGATION**********/
-
-   header{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-   .top{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0px;
-   }
-
-    h1{
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    }
+   nav a{
+    text-decoration: none;
+    color:white
+  }
 
    .bottom{
     display:flex;
@@ -623,21 +620,7 @@ font-weight: 500;
    #contactButton{
     display: flex;
     margin: 0 auto;
-   }
-
-   nav ul{
-    
-    
-    background-color: rgb(232, 232, 26);
-    width: 77.2%
-    
-   }
-
-   .top li{
-    color:black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 10;
+    margin-bottom: 30px;
    }
 
    .presentation{
@@ -693,7 +676,7 @@ font-weight: 500;
           gap: 10px; /* Espacement entre les éléments */
       }
       
-      /* Retirez la propriété grid-column pour l'élément #envoyer */
+      /* Retire la propriété grid-column pour l'élément #envoyer */
       #envoyer {
           padding: 10px;
           background-color: #10837D;
@@ -711,16 +694,15 @@ font-weight: 500;
           border-radius: 5px;
           border: 1px solid #ccc;
           width: 80%; /* Les cases seront aussi larges que leur conteneur */
-          max-width: 400px; /* Vous pouvez ajuster la largeur maximale */
+          max-width: 400px; 
           margin: 0 auto; /* Pour les centrer horizontalement s'ils ne sont pas déjà centrés */
       }
       
       textarea {
-          /* Vous pouvez supprimer cette ligne, elle n'est plus nécessaire */
+         
           height: 150px;
-          width: 80%; /* Remarquez que j'ai ajusté la largeur de la zone de texte à 100% */
+          width: 80%; 
       }
-
       #coordonnees{
         display:flex;
         flex-direction: column;
@@ -770,10 +752,11 @@ font-weight: 500;
 
       #footer{
         display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center; 
         flex-wrap: wrap;
-        height: 120px;
+        height: 160px;
         padding-left: 0;
       }
 
@@ -789,12 +772,166 @@ font-weight: 500;
 
       #noms{
         font-size: 27px;
-        padding-top: 10px;
+        padding-top: 0px;
+        margin-bottom: 20px;
       }
-      
-        
-    
-    
 }
 
+@media (max-width: 668px){
+  /*****NAVIGATION**********/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
 
+   h1{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    }
+
+  .top{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+   }
+
+   nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    background-color: black;
+    padding: 0; 
+    margin: 0; 
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: flex; 
+    margin: 0 10px; 
+    color:white;
+    justify-content: center;
+  }
+
+  nav a{
+    color:white;
+    text-decoration: none;
+  }
+
+   .top li{
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+
+    nav a:hover {
+      /* Annule les styles de hover pour les écrans plus petits */
+      background-color: transparent;
+      padding: 0;
+      font-size: 16px; /* Ajuste la taille du texte si nécessaire */
+    }
+  
+    /* Styles pour le changement de couleur au clic */
+    
+
+    .image-item img{
+      width: 243px;
+    }
+
+    #contact-link{
+      margin-bottom: 40px;
+    }
+    #coordonnees{
+      display:flex;
+      flex-direction: column;
+    }
+
+    #tel{
+      padding-top: 40px;
+    }
+
+    .tel-mail{
+      widows: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    #tel{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    #tel  p{
+      font-family: arial;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  
+    .tel-mail a {
+      color: black;
+      text-decoration: none;
+      font-family: 'Garamond';
+      font-size:20px
+    }
+  
+    #mail p{
+      font-family: Arial;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .reseaux{
+      display:flex;
+      flex-direction: row;
+      gap:40px;
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+
+    #footer {
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 150px;
+      padding-left: 0;
+    }
+    
+    #footer p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    
+    #footer span {
+      font-size: 14px;
+      margin-left: 5px;
+     
+    }
+    
+    #noms {
+      font-size: 26px;
+      margin-bottom: 30px;
+      
+    }
+    
+  }
+    

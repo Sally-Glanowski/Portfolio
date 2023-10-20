@@ -73,3 +73,31 @@ for (var i = 0; i < modalLinks.length; i++) {
 }
 
 
+// Sélectionne tous les liens dans la navigation
+const navLinks = document.querySelectorAll("nav a");
+
+// Ajoute un gestionnaire d'événements au clic sur chaque lien
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    // Empêche le comportement par défaut du lien (naviguer vers une autre page)
+    event.preventDefault();
+    
+    // Supprime la classe "active" de tous les liens
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove("active");
+    });
+    
+    // Ajoute la classe "active" au lien cliqué
+    link.classList.add("active");
+    
+    // Récupére l'ancre cible depuis l'attribut href du lien
+    const targetAnchor = document.querySelector(link.getAttribute("href"));
+    
+    // Faites défiler vers l'ancre cible (peut-être avec un effet de défilement en douceur)
+    if (targetAnchor) {
+      targetAnchor.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+
