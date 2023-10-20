@@ -10,46 +10,93 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Sally Glanowski Développeuse</title>
+    <title>Sally Glanowski Developpeur</title>
+    <meta name="google-site-verification" content="ZmFRZscemNNPVV2ukLqMTbU1vHbiR1VX4KScnX9cl7E" />
+    <meta name="location" content="Lille, France">
+    <meta name="business:hours" content="Mo, Tu, We, Th, Fr 09:00-18:00">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Sally Glanowski" />
+    <meta name="lang" content="fr" />
+    <meta name="keywords" content="développeur front-end, HTML, CSS, JavaScript, création de site web" />
+    <meta property="og:title" content="Sally Glanowski Profil LinkedIn">
+    <meta property="og:description" content="Consultez mon profil LinkedIn pour en savoir plus sur mon expérience et mes compétences en développement web.">
+    <meta property="og:url" content="https://www.linkedin.com/in/sally-glanowski-827799261/">
+    <meta property="og:title" content="Sally Glanowski Profil Github">
+    <meta property="og:description" content="Consultez mon profil Github pour en savoir plus sur mon expérience et mes compétences en développement web.">
+    <meta property="og:url" content="https://github.com/Sally-Glanowski?tab=repositories">
+    <meta property="og:image" content="https://github.com/Sally-Glanowski/Portfolio/blob/master/images/logo/femmePc.png">
+    <meta name="currency" content="EUR">
+    <meta name="business:availability" content="24/7"> 
+    <meta name="specialty" content="Développeur Front-End, Création de Contenu, Design">
+    <meta name="audience" content="Particuliers, Entreprises">
+    <meta name="robots" content="index, follow"> 
+    <script type="application/ld+json">
+        {
+           "@context": "http://schema.org",
+           "@type": "ProfessionalService",
+           "name": "Freelance Web Development Services",
+           "description": "Spécialisée dans le développement web, création de contenu, blog, design à destination des particuliers et entreprises",
+           "areaServed": "Lille, France",
+           "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+           "availableChannel": {
+               "@type": "ServiceChannel",
+               "serviceUrl": "https://sally-glanowski.github.io/Portfolio/#contact-id"
+           },
+           "telephone": "0688728130",
+           "priceRange": "50€ - 15000€",
+           "address": {
+               "@type": "PostalAddress",
+               "addressLocality": "Lille",
+               "addressRegion": "France",
+               "postalCode": "59000"
+           },
+           "image": "https://github.com/Sally-Glanowski/Portfolio/blob/master/images/logo/lune.png"
+        }
+        </script>
 </head>
 <body>
 
-    <header>
+    <header itemscope itemtype="http://schema.org/WPHeader">
         <div class="top">
-            <h1>/Sally Glanowski</h1>
-            <nav>
-                <ul>
-                    <li><a href="#phone">Présentation</a></li>
-                    <li><a href="#travaux-link">Travaux</a></li>
-                    <li><a href="#competences-link">Compétences</a></li>
-                    <li><a href="#contact-link">Contact</a></li>
+            <h1>
+                <span aria-hidden="true">/</span> 
+                <span itemprop="name">Sally Glanowski</span>
+            </h1>
+            <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Menu de navigation principal">
+                <ul itemprop="name">
+                    <li><a href="#ordinateur" itemprop="url">Présentation</a></li>
+                    <li><a href="#travaux-link" itemprop="url">Travaux</a></li>
+                    <li><a href="#competences-link" itemprop="url">Compétences</a></li>
+                    <li><a href="#contact-link" itemprop="url">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="bottom">
             <div class="presentation">
                 <p id="small-text">Bonjour, je suis</p>
-                <h2>Developpeuse Front-end</h2> 
-                <p id="lines">Pour la création 
-                    de vos sites vitrine ainsi que de vos <br>applications e-commerce.
-                </p>
-                <a href="tel:0688728130" id="contactButton" class="bouton">Contactez-moi !</a>
-
-                <p id="phone"></p>         
+                <h2 itemprop="headline">Developpeuse Front-end</h2>
+                <p id="lines">Pour la création de vos sites vitrine ainsi que de vos <br>applications e-commerce.</p>
+                <a href="tel:0688728130" id="contactButton" class="bouton" itemprop="hasPart" itemscope itemtype="http://schema.org/ContactPage">
+                    <span itemprop="name">Contactez-moi !</span>
+                </a>
+                <!-- Ajout d'un élément de texte caché pour améliorer l'accessibilité -->
+                <p id="phone" aria-hidden="true" style="display: none;">Numéro de téléphone : 0688728130</p>
             </div>
-            <img class="logoFemmePc" src="./images/logo/femmePc.png" alt="Your Image">
+            <img class="logoFemmePc" src="./images/logo/femmePc.png" alt="Illustration d'une femme utilisant un ordinateur" itemprop="image">
         </div>
     </header>
+    
 
-    <section class="a-propos">
+    <section class="a-propos" itemscope itemtype="http://schema.org/AboutPage">
         <div class="qui-suis-je">
-            <p> QUI SUIS-JE ?</p>
-            <h3>À propos</h3>
+            <p itemprop="name">QUI SUIS-JE ?</p>
+            <h3 itemprop="headline">À propos</h3>
         </div>
         <div class="portrait">
             <div class="computer">
-                <img id="ordinateur" src="./images/design/computer.png">
+                <img id="ordinateur" src="./images/design/computer.png" itemprop="image">
             </div>
-            <div class="bio">Après plusieurs années dans le domaine du médico-social,
+            <div class="bio" itemprop="description">Après plusieurs années dans le domaine du médico-social,
                 j'ai décidé de renouer avec ma créativité en apprenant à jongler
                 avec des balises HTML, à créer des mises en page personnalisées 
                 avec du CSS, et à donner vie à des sites web avec du JavaScript.<br><br>
@@ -57,7 +104,7 @@
                 couleurs, typographies et animations pour créer des expériences 
                 utilisateur uniques.<br><br>
                 C'est là que réside toute la magie du web, un endroit où chaque 
-                clic est une récompense pour votre créativité.<br><br id="travaux-link">                Formée en 2023 par OpenClassrooms, j'ai acquis une grande 
+                clic est une récompense pour votre créativité.<br><br id="travaux-link">Formée en 2023 par OpenClassrooms, j'ai acquis une grande 
                 autonomie de travail et je suis continuellement à l'affût de 
                 nouveaux outils afin de répondre le plus précisément possible 
                 aux demandes.<br>
@@ -65,48 +112,48 @@
             </div>
         </div>
     </section>
-
-    <main >
-        <section class="travaux">
+    
+    <main itemscope itemtype="http://schema.org/CreativeWork">
+        <section class="travaux" itemprop="hasPart">
             <div class="mes-travaux">
-                <p> PORTFOLIO</p>
-                <h4>Mes travaux</h4>
+                <p itemprop="name">PORTFOLIO</p>
+                <h4 itemprop="headline">Mes travaux</h4>
             </div>
             <div class="background-travaux">
-                
                 <div class="image-grid" itemprop="hasPart">
                     <article class="image-item" itemprop="hasPart">
-                        <a href="https://sally-glanowski.github.io/Booki/" target="_blank">
-                            <img src="./images/booki/booki3.png" alt="Image lien logo booki">
-                            <h5 class="p-travaux" itemprop="name">BOOKI<br><span>Agence de voyage</span></h5>
+                        <a href="https://sally-glanowski.github.io/Booki/" target="_blank" itemprop="url">
+                            <img src="./images/booki/booki3.png" alt="Image lien logo booki" itemprop="image">
+                            <h5 class="p-travaux" itemprop="name">BOOKI<br><span itemprop="genre">Agence de voyage</span></h5>
                         </a>
                     </article>
-        
+    
                     <article class="image-item" itemprop="hasPart">
-                        <a href="./images/sophie/sosopdf.png" target="_blank" alt="site Sophie Bluel" class="modal-link">
-                            <img src="./images/sophie/accueil-sophie.png" alt="lien site de Sophie Bluel">
-                            <h5 class="p-travaux" itemprop="name">SOPHIE BLUEL<br><span>Architecte</span></h5>
+                        <a href="./images/sophie/sosopdf.png" target="_blank" alt="site Sophie Bluel" class="modal-link" itemprop="url">
+                            <img src="./images/sophie/accueil-sophie.png" alt="lien site de Sophie Bluel" itemprop="image">
+                            <h5 class="p-travaux" itemprop="name">SOPHIE BLUEL<br><span itemprop="genre">Architecte</span></h5>
                         </a>
                     </article>
-                    
-        
+    
                     <article class="image-item" itemprop="hasPart">
-                        <a href="./images/grimoire/grimoirepdf.png" target="_blank" alt="site librairie mon vieux grimoire" class="modal-link">
-                            <img src="./images/grimoire/accueil2.png" alt="Image logo booki">
-                            <h5 class="p-travaux" itemprop="name">MON VIEUX GRIMOIRE<br><span>Librairie</span></h5>
+                        <a href="./images/grimoire/grimoirepdf.png" target="_blank" alt="site librairie mon vieux grimoire" class="modal-link" itemprop="url">
+                            <img src="./images/grimoire/accueil2.png" alt="Image logo booki" itemprop="image">
+                            <h5 class="p-travaux" itemprop="name">MON VIEUX GRIMOIRE<br><span itemprop="genre">Librairie</span></h5>
                         </a>
                     </article>
-        
+    
                     <article class="image-item" itemprop="hasPart">
-                        <a href="https://sally-glanowski.github.io/nina-carducci.sally-glanowski.github.io/" target="_blank" alt="site photographe nina carducci">
-                            <img src="./images/nina/accueil2.png" alt="Image nina carducci en salopette">
-                            <h5 class="p-travaux" itemprop="name">NINA CARDUCCI<br><span>Photographe</span></h5>
+                        <a href="https://sally-glanowski.github.io/nina-carducci.sally-glanowski.github.io/" target="_blank" alt="site photographe nina carducci" itemprop="url">
+                            <img src="./images/nina/accueil2.png" alt="Image nina carducci en salopette" itemprop="image">
+                            <h5 class="p-travaux" itemprop="name">NINA CARDUCCI<br><span itemprop="genre">Photographe</span></h5>
                         </a>
                     </article>
-        <div id="competences-link"></div>
+                    <div id="competences-link"></div>
                 </div>
             </div>
         </section>
+    </main>
+    
             <!--------COMPETENCES-->
         
         <section class="competences" itemscope itemtype="http://schema.org/Skill">
@@ -239,15 +286,14 @@
             </div>
         </aside>
 
-        <footer id="footer">
-            <div id="noms">
-                / Sally Glanowski
-            </div>
-            <div class="footer-info">
-                <p>DEVELOPPEUSE FRONT- END</p>
-                <span>Mentions légales - Copyright 2023</span>
+        <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
+            <div id="noms" itemprop="name">/ Sally Glanowski</div>
+            <div class="footer-info" itemprop="hasPart" itemscope itemtype="http://schema.org/WebPageElement">
+                <p itemprop="description">DEVELOPPEUSE FRONT- END</p>
+                <span itemprop="copyrightHolder">Mentions légales - Copyright 2023</span>
             </div>
         </footer>
+        
         
     
         <div id="modal" class="modal">
