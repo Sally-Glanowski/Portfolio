@@ -94,11 +94,12 @@ margin: 0;
 
 #lines{
 font-family: 'Garamond';
-width: 50%;
-font-size: 16px;
+width: 60%;
+font-size: 19px;
 margin-top: 0px;
 margin-bottom: 0px;
 margin-bottom: 25px;
+font-weight: 550;
 }
 
 .bouton{
@@ -172,6 +173,9 @@ margin-bottom: 25px;
     width: 70%;
     line-height: 24px;
     padding-right: 40px;
+    font-size: 19px;
+    font-family: 'Garamond';
+    font-weight: 550;
 }
 
 /*********PORTFOLIO**********/
@@ -505,7 +509,6 @@ font-weight: 500;
 
   .tel-mail a {
     color: black;
-    text-decoration: none;
     font-family: 'Garamond';
     font-size:20px
   }
@@ -642,7 +645,7 @@ font-weight: 500;
    #lines{
     width: 100%;
     margin-bottom: 50px;
-    font-size: 17px;
+    font-size: 18px;
    }
         .portrait {
           display:flex;
@@ -730,7 +733,6 @@ font-weight: 500;
     
       .tel-mail a {
         color: black;
-        text-decoration: none;
         font-family: 'Garamond';
         font-size:20px
       }
@@ -894,7 +896,6 @@ font-weight: 500;
   
     .tel-mail a {
       color: black;
-      text-decoration: none;
       font-family: 'Garamond';
       font-size:20px
     }
