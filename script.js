@@ -1,10 +1,3 @@
-//affichage numero de tel au clic sur bouton
-document.getElementById('contactButton').addEventListener('click', function() {
-    if (this.textContent === 'Contactez-moi !') {
-        this.textContent = '06 88 72 81 30';
-    } 
-});
-
 
 //Effet d'apparition des cartes
 const cards = document.querySelectorAll(".card");
