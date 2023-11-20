@@ -166,15 +166,18 @@ font-weight: 550;
 .computer {
   display: flex;
   padding-left: 40px;
-  width: 80%;
+  width: 60%;
   height: auto; 
   overflow: hidden; 
+  border-radius: 20px;
 }
 
-#ordinateur {
+#auto-portrait {
   width: 90%; 
   height: 100%; 
   object-fit: cover; 
+  border-radius: 20px;
+  filter: sepia(10%) grayscale(90%);
 }
 
 .bio{
